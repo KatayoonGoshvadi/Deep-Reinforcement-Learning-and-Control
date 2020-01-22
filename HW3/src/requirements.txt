@@ -1,0 +1,9 @@
+numpy
+scipy
+git+https://github.com/pybox2d/pybox2d
+gym[box2d]
+tensorflow
+keras
+matplotlib
+pyglet
+h5py
