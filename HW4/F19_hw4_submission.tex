@@ -1,0 +1,229 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath, amssymb, amsthm, enumerate, graphicx}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{bm}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{float}
+\usepackage{graphics}
+\setlength{\marginparwidth}{2.15cm}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{epsfig}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage[normalem]{ulem}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows, automata}
+\usepackage{pgfplots}
+\usepackage[font=scriptsize]{subcaption}
+\usepackage{float}
+\usepackage[]{algorithm2e}
+\usepackage{environ}
+\usepackage{bbm}
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{lastpage}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{comment}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{marvosym}
+\usepackage{wrapfig}
+\usepackage{datetime}
+\usepackage[many]{tcolorbox}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wasysym}
+\usepackage{cancel}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[thinlines]{easytable}
+\usepackage{lastpage}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\blackcircle}{\tikz\draw[black,fill=black] (0,0) circle (1ex);}
+\renewcommand{\circle}{\tikz\draw[black] (0,0) circle (1ex);}
+
+\usetikzlibrary{positioning,calc}
+
+\newtcolorbox[]{solution}[1][]{%
+    breakable,
+    enhanced,
+    colback=white,
+    %title=Solution,
+    #1
+}
+
+\begin{document}
+\section*{}
+\begin{center}
+  \centerline{\textsc{\LARGE  Homework 4 Template}}
+\end{center}
+
+Use this template to record your answers for Homework 4.  Add your answers using \LaTeX and then save your document as a PDF to upload to Gradescope.  You are required to use this template to submit your answers.  \textbf{You should not alter this template in any way} other than to insert your solutions.  You must submit all \pageref{LastPage} pages of this template to Gradescope.  Do not remove the instructions page(s).  Altering this template or including your solutions outside of the provided boxes can result in your assignment being graded incorrectly.  You may lose points if you do not follow these instructions.
+
+You should also save your code as a .py or .zip file and upload it to the \textbf{separate} Gradescope coding assignment. Remember to mark all teammates on \textbf{both} assignment uploads through Gradescope.
+
+\section*{Instructions for Specific Problem Types}
+
+On this homework, you must fill in (a) blank(s) for each problem; please make sure your final answer is fully included in the given space.  \textbf{Do not change the size of the box provided.}  For short answer questions you should \textbf{not} include your work in your solution.  Only provide an explanation or proof if specifically asked.  Otherwise, your assignment may not be graded correctly, and points may be deducted from your assignment.
+
+\begin{quote}
+\textbf{Fill in the blank:} What is the course number?
+
+\begin{tcolorbox}[fit,height=1cm, width=4cm, blank, borderline={1pt}{-2pt},valign=center,nobeforeafter]
+    \begin{center}\huge10-703\end{center}
+    \end{tcolorbox}
+\end{quote}
+
+\newpage
+
+\section*{Problem 0: Collaborators}
+Enter your team's names and Andrew IDs in the boxes below.  If you do not do this, you may lose points on your assignment.
+
+Name 1: \begin{tcolorbox}[fit,height=1cm, width=5cm, blank, borderline={1pt}{1pt},nobeforeafter]
+    \begin{center}
+    \vspace{3mm}
+    \large{}
+    \end{center}
+\end{tcolorbox}
+Andrew ID 1: \begin{tcolorbox}[fit,height=1cm, width=5cm, blank, borderline={1pt}{1pt},nobeforeafter]
+    \begin{center}
+    \vspace{3mm}
+    \large{}
+    \end{center}
+\end{tcolorbox}
+    \\
+Name 2: \begin{tcolorbox}[fit,height=1cm, width=5cm, blank, borderline={1pt}{1pt},nobeforeafter]
+    \begin{center}
+    \vspace{3mm}
+    \large{}
+    \end{center}
+\end{tcolorbox}
+Andrew ID 2: \begin{tcolorbox}[fit,height=1cm, width=5cm, blank, borderline={1pt}{1pt},nobeforeafter]
+    \begin{center}
+    \vspace{3mm}
+    \large{}
+    \end{center}
+\end{tcolorbox} \\
+Name 3: \begin{tcolorbox}[fit,height=1cm, width=5cm, blank, borderline={1pt}{1pt},nobeforeafter]
+    \begin{center}
+    \vspace{3mm}
+    \large{}
+    \end{center}
+\end{tcolorbox}
+Andrew ID 3: \begin{tcolorbox}[fit,height=1cm, width=5cm, blank, borderline={1pt}{1pt},nobeforeafter]
+    \begin{center}
+    \vspace{3mm}
+    \large{}
+    \end{center}
+\end{tcolorbox} \\
+\vspace{0.5cm}
+\vspace{0.5cm}
+
+\newpage
+\section*{Problem 1: DDPG (60 pts)}
+
+\subsection*{1.1 Gradients of the reward w.r.t. the policy? (15 pts)}
+\begin{solution}[height=5cm]
+% YOUR SOLUTION
+\end{solution}
+
+\subsection*{1.2 How did you implement the actor update (10 pts)}
+\begin{solution}[height=5cm]
+% YOUR SOLUTION
+\end{solution}
+
+\subsection*{1.3 Hyperparameters for DDPG (5 pts)}
+\begin{solution}[height=5cm]
+% YOUR SOLUTION
+\end{solution}
+
+\subsection*{1.4 Training curve (20 pts)}
+Remember to include error bars and label the axes.
+\begin{solution}[height=20cm]
+% YOUR SOLUTION
+\end{solution}
+
+\subsection*{1.5 Off-Policy Training Metrics (10 pts)}
+\begin{solution}[height=20cm]
+% YOUR SOLUTION
+\end{solution}
+
+\subsection*{1.6 (Extra Credit) TD3 (up to 5 pts)}
+\begin{solution}[height=20cm]
+% YOUR SOLUTION
+\end{solution}
+
+
+\newpage
+\section*{Problem 2: HER (40 pts)}
+
+\subsection*{2.1 Hyperparameters for HER (5 pts)}
+\begin{solution}[height=5cm]
+% YOUR SOLUTION
+\end{solution}
+
+\subsection*{2.2 Training Curve (15 pts)}
+\begin{solution}[height=13cm]
+% YOUR SOLUTION
+\end{solution}
+
+\subsection*{2.3 Comparing DDPG vs DDPG + HER (5 pts)}
+\begin{solution}[height=10cm]
+% YOUR SOLUTION
+\end{solution}
+
+\subsection*{2.4 Define the relabeled goal distribution, $\hat{p}$ (10 pts)}
+\begin{solution}[height=9cm]
+% YOUR SOLUTION
+\end{solution}
+
+\subsection*{2.5 (Extra Credit) How might you solve the distribution shift problem? (up to 2 pts)}
+\begin{solution}[height=8cm]
+% YOUR SOLUTION
+\end{solution}
+
+\subsection*{2.6 Limitations of HER (5 pts)}
+\begin{solution}[height=10cm]
+% YOUR SOLUTION
+\end{solution}
+
+
+\clearpage
+\section*{Extra (2pts)}
+
+\textbf{Feedback (1pts)}: You can help the course staff improve the course for future semesters by providing feedback. You will receive a point if you provide actionable feedback \textbf{for each of the following categories}.
+
+What advice would you give to future students working on this homework?
+\begin{solution}[height=4cm]
+\end{solution}
+
+\noindent\textbf{Time Spent (1pt)}: How many hours did you spend working on this assignment? Your answer will not affect your grade.
+\begin{table}[H]
+    \centering
+    \begin{tabular}{r|c}
+        Alone &  \hspace{3em} %ANSWER HERE%
+        \\ \hline
+        With teammates & \hspace{3em} %ANSWER HERE%
+        \\ \hline
+        With other classmates & \hspace{3em} %ANSWER HERE%
+        \\ \hline
+        At office hours & \hspace{3em} %ANSWER HERE%
+        \\ \hline
+    \end{tabular}
+\end{table}
+
+
+
+\end{document}
