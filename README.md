@@ -1,4 +1,4 @@
-# Deep-Reinforcement-Learning-and-Control
+# Deep-Reinforcement-Learning
 
 Project1 topics: Imitation Learning - Behavior Cloning - Dagger - CMA-ES 
 
