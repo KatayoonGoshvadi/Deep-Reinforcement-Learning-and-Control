@@ -1,5 +1,4 @@
 # Deep-Reinforcement-Learning-and-Control
-CMU course
 
 Project1 topics: Imitation Learning - Behavior Cloning - Dagger - CMA-ES 
 
