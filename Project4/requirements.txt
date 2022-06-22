@@ -1,6 +1,6 @@
 box2d-py==2.3.8
 gym==0.14.0
 matplotlib==2.2.4
-numpy==1.16.5
+numpy==1.22.0
 tensorflow==1.14.0
 
